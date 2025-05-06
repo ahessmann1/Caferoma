@@ -1,0 +1,232 @@
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Café Aroma</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+    button:disabled {
+      cursor: not-allowed;
+      opacity: 0.6;
+    }
+  </style>
+</head>
+<body class="bg-[#FAF5E6] min-h-screen p-4 flex flex-col items-center">
+  <div class="max-w-md w-full rounded-xl overflow-hidden mb-8">
+    <header class="bg-[#422913] p-6 rounded-xl">
+      <h1 class="text-[#FAF5E6] text-3xl font-extrabold leading-tight tracking-wide text-center">CAFÉ AROMA</h1>
+    </header>
+  </div>
+
+  <div class="max-w-md w-full space-y-6" id="suggestions">
+    <section class="bg-[#FCF9E7] rounded-xl p-6 shadow-inner">
+      <h2 class="text-[#422913] font-extrabold text-lg mb-3">Ana</h2>
+      <p class="text-[#422913] font-semibold mb-1">Sabor: <span class="font-normal">Café com Amora</span></p>
+      <p class="text-[#422913] font-semibold mb-1">Leite: <span class="font-normal">Leite de amêndoas</span></p>
+      <p class="text-[#422913] font-semibold mb-4">Complemento: <span class="font-normal">Chantilly</span></p>
+      <button aria-label="Curtir Ana" class="flex items-center gap-3 bg-[#422913] text-[#FAF5E6] rounded-md px-4 py-2 text-base font-normal hover:bg-[#3a230f] transition like-btn">
+        <i class="fas fa-thumbs-up"></i> <span class="like-count">132</span>
+      </button>
+    </section>
+
+    <section class="bg-[#FCF9E7] rounded-xl p-6 shadow-inner">
+      <h2 class="text-[#422913] font-extrabold text-lg mb-3">Bruno</h2>
+      <p class="text-[#422913] font-semibold mb-1">Sabor: <span class="font-normal">Café com Maracujá</span></p>
+      <p class="text-[#422913] font-semibold mb-1">Leite: <span class="font-normal">Leite integral</span></p>
+      <p class="text-[#422913] font-semibold mb-4">Complemento: <span class="font-normal">Leite condensado</span></p>
+      <button aria-label="Curtir Bruno" class="flex items-center gap-3 bg-[#422913] text-[#FAF5E6] rounded-md px-4 py-2 text-base font-normal hover:bg-[#3a230f] transition like-btn">
+        <i class="fas fa-thumbs-up"></i> <span class="like-count">89</span>
+      </button>
+    </section>
+
+    <section class="bg-[#FCF9E7] rounded-xl p-6 shadow-inner">
+      <h2 class="text-[#422913] font-extrabold text-lg mb-3">Camila</h2>
+      <p class="text-[#422913] font-semibold mb-1">Sabor: <span class="font-normal">Café com Coco</span></p>
+      <p class="text-[#422913] font-semibold mb-1">Leite: <span class="font-normal">Leite vegetal de caju</span></p>
+      <p class="text-[#422913] font-semibold mb-4">Complemento: <span class="font-normal">Cacau em pó</span></p>
+      <button aria-label="Curtir Camila" class="flex items-center gap-3 bg-[#422913] text-[#FAF5E6] rounded-md px-4 py-2 text-base font-normal hover:bg-[#3a230f] transition like-btn">
+        <i class="fas fa-thumbs-up"></i> <span class="like-count">214</span>
+      </button>
+    </section>
+
+    <section class="bg-[#FCF9E7] rounded-xl p-6 shadow-inner">
+      <h2 class="text-[#422913] font-extrabold text-lg mb-3">Diego</h2>
+      <p class="text-[#422913] font-semibold mb-1">Sabor: <span class="font-normal">Café com Framboesa</span></p>
+      <p class="text-[#422913] font-semibold mb-1">Leite: <span class="font-normal">Leite de soja</span></p>
+      <p class="text-[#422913] font-semibold mb-4">Complemento: <span class="font-normal">Pedaços de chocolate</span></p>
+      <button aria-label="Curtir Diego" class="flex items-center gap-3 bg-[#422913] text-[#FAF5E6] rounded-md px-4 py-2 text-base font-normal hover:bg-[#3a230f] transition like-btn">
+        <i class="fas fa-thumbs-up"></i> <span class="like-count">167</span>
+      </button>
+    </section>
+
+    <section class="bg-[#FCF9E7] rounded-xl p-6 shadow-inner">
+      <h2 class="text-[#422913] font-extrabold text-lg mb-3">Elisa</h2>
+      <p class="text-[#422913] font-semibold mb-1">Sabor: <span class="font-normal">Café com Banana e Canela</span></p>
+      <p class="text-[#422913] font-semibold mb-1">Leite: <span class="font-normal">Leite de coco</span></p>
+      <p class="text-[#422913] font-semibold mb-4">Complemento: <span class="font-normal">Canela em pó</span></p>
+      <button aria-label="Curtir Elisa" class="flex items-center gap-3 bg-[#422913] text-[#FAF5E6] rounded-md px-4 py-2 text-base font-normal hover:bg-[#3a230f] transition like-btn">
+        <i class="fas fa-thumbs-up"></i> <span class="like-count">198</span>
+      </button>
+    </section>
+
+    <section class="bg-[#FCF9E7] rounded-xl p-6 shadow-inner">
+      <h2 class="text-[#422913] font-extrabold text-lg mb-3">Felipe</h2>
+      <p class="text-[#422913] font-semibold mb-1">Sabor: <span class="font-normal">Café com Chocolate e Pimenta</span></p>
+      <p class="text-[#422913] font-semibold mb-1">Leite: <span class="font-normal">Leite vegetal de cânhamo</span></p>
+      <p class="text-[#422913] font-semibold mb-4">Complemento: <span class="font-normal">Nutella</span></p>
+      <button aria-label="Curtir Felipe" class="flex items-center gap-3 bg-[#422913] text-[#FAF5E6] rounded-md px-4 py-2 text-base font-normal hover:bg-[#3a230f] transition like-btn">
+        <i class="fas fa-thumbs-up"></i> <span class="like-count">242</span>
+      </button>
+    </section>
+
+    <section class="bg-[#FCF9E7] rounded-xl p-6 shadow-inner">
+      <h2 class="text-[#422913] font-extrabold text-lg mb-3">Gabriela</h2>
+      <p class="text-[#422913] font-semibold mb-1">Sabor: <span class="font-normal">Café com Morango e Creme</span></p>
+      <p class="text-[#422913] font-semibold mb-1">Leite: <span class="font-normal">Leite de aveia</span></p>
+      <p class="text-[#422913] font-semibold mb-4">Complemento: <span class="font-normal">Caramelo</span></p>
+      <button aria-label="Curtir Gabriela" class="flex items-center gap-3 bg-[#422913] text-[#FAF5E6] rounded-md px-4 py-2 text-base font-normal hover:bg-[#3a230f] transition like-btn">
+        <i class="fas fa-thumbs-up"></i> <span class="like-count">120</span>
+      </button>
+    </section>
+
+    <section class="bg-[#FCF9E7] rounded-xl p-6 shadow-inner">
+      <h2 class="text-[#422913] font-extrabold text-lg mb-3">Henrique</h2>
+      <p class="text-[#422913] font-semibold mb-1">Sabor: <span class="font-normal">Café com Laranja</span></p>
+      <p class="text-[#422913] font-semibold mb-1">Leite: <span class="font-normal">Leite de caju</span></p>
+      <p class="text-[#422913] font-semibold mb-4">Complemento: <span class="font-normal">Leite em pó</span></p>
+      <button aria-label="Curtir Henrique" class="flex items-center gap-3 bg-[#422913] text-[#FAF5E6] rounded-md px-4 py-2 text-base font-normal hover:bg-[#3a230f] transition like-btn">
+        <i class="fas fa-thumbs-up"></i> <span class="like-count">76</span>
+      </button>
+    </section>
+
+    <section class="bg-[#FCF9E7] rounded-xl p-6 shadow-inner">
+      <h2 class="text-[#422913] font-extrabold text-lg mb-3">Isadora</h2>
+      <p class="text-[#422913] font-semibold mb-1">Sabor: <span class="font-normal">Café com Baunilha e Lavanda</span></p>
+      <p class="text-[#422913] font-semibold mb-1">Leite: <span class="font-normal">Leite de amêndoas</span></p>
+      <p class="text-[#422913] font-semibold mb-4">Complemento: <span class="font-normal">Pedaços de chocolate</span></p>
+      <button aria-label="Curtir Isadora" class="flex items-center gap-3 bg-[#422913] text-[#FAF5E6] rounded-md px-4 py-2 text-base font-normal hover:bg-[#3a230f] transition like-btn">
+        <i class="fas fa-thumbs-up"></i> <span class="like-count">151</span>
+      </button>
+    </section>
+
+    <section class="bg-[#FCF9E7] rounded-xl p-6 shadow-inner">
+      <h2 class="text-[#422913] font-extrabold text-lg mb-3">João</h2>
+      <p class="text-[#422913] font-semibold mb-1">Sabor: <span class="font-normal">Café com Gengibre e Canela</span></p>
+      <p class="text-[#422913] font-semibold mb-1">Leite: <span class="font-normal">Leite integral</span></p>
+      <p class="text-[#422913] font-semibold mb-4">Complemento: <span class="font-normal">Cacau em pó</span></p>
+      <button aria-label="Curtir João" class="flex items-center gap-3 bg-[#422913] text-[#FAF5E6] rounded-md px-4 py-2 text-base font-normal hover:bg-[#3a230f] transition like-btn">
+        <i class="fas fa-thumbs-up"></i> <span class="like-count">93</span>
+      </button>
+    </section>
+
+    <section class="bg-[#FCF9E7] rounded-xl p-6 shadow-inner">
+      <h2 class="text-[#422913] font-extrabold text-lg mb-3">Karina</h2>
+      <p class="text-[#422913] font-semibold mb-1">Sabor: <span class="font-normal">Café com Damasco e Mel</span></p>
+      <p class="text-[#422913] font-semibold mb-1">Leite: <span class="font-normal">Leite de aveia</span></p>
+      <p class="text-[#422913] font-semibold mb-4">Complemento: <span class="font-normal">Chantilly</span></p>
+      <button aria-label="Curtir Karina" class="flex items-center gap-3 bg-[#422913] text-[#FAF5E6] rounded-md px-4 py-2 text-base font-normal hover:bg-[#3a230f] transition like-btn">
+        <i class="fas fa-thumbs-up"></i> <span class="like-count">170</span>
+      </button>
+    </section>
+
+    <section class="bg-[#FCF9E7] rounded-xl p-6 shadow-inner">
+      <h2 class="text-[#422913] font-extrabold text-lg mb-3">Lucas</h2>
+      <p class="text-[#422913] font-semibold mb-1">Sabor: <span class="font-normal">Café com Menta e Chocolate</span></p>
+      <p class="text-[#422913] font-semibold mb-1">Leite: <span class="font-normal">Leite de soja</span></p>
+      <p class="text-[#422913] font-semibold mb-4">Complemento: <span class="font-normal">Pedaços de chocolate</span></p>
+      <button aria-label="Curtir Lucas" class="flex items-center gap-3 bg-[#422913] text-[#FAF5E6] rounded-md px-4 py-2 text-base font-normal hover:bg-[#3a230f] transition like-btn">
+        <i class="fas fa-thumbs-up"></i> <span class="like-count">201</span>
+      </button>
+    </section>
+
+    <section class="bg-[#FCF9E7] rounded-xl p-6 shadow-inner">
+      <h2 class="text-[#422913] font-extrabold text-lg mb-3">Mariana</h2>
+      <p class="text-[#422913] font-semibold mb-1">Sabor: <span class="font-normal">Café com Caramelo Salgado</span></p>
+      <p class="text-[#422913] font-semibold mb-1">Leite: <span class="font-normal">Leite de coco</span></p>
+      <p class="text-[#422913] font-semibold mb-4">Complemento: <span class="font-normal">Caramelo</span></p>
+      <button aria-label="Curtir Mariana" class="flex items-center gap-3 bg-[#422913] text-[#FAF5E6] rounded-md px-4 py-2 text-base font-normal hover:bg-[#3a230f] transition like-btn">
+        <i class="fas fa-thumbs-up"></i> <span class="like-count">185</span>
+      </button>
+    </section>
+
+    <section class="bg-[#FCF9E7] rounded-xl p-6 shadow-inner">
+      <h2 class="text-[#422913] font-extrabold text-lg mb-3">Natália</h2>
+      <p class="text-[#422913] font-semibold mb-1">Sabor: <span class="font-normal">Café com Morango e Creme</span></p>
+      <p class="text-[#422913] font-semibold mb-1">Leite: <span class="font-normal">Leite vegetal de cânhamo</span></p>
+      <p class="text-[#422913] font-semibold mb-4">Complemento: <span class="font-normal">Leite condensado</span></p>
+      <button aria-label="Curtir Natália" class="flex items-center gap-3 bg-[#422913] text-[#FAF5E6] rounded-md px-4 py-2 text-base font-normal hover:bg-[#3a230f] transition like-btn">
+        <i class="fas fa-thumbs-up"></i> <span class="like-count">110</span>
+      </button>
+    </section>
+
+    <section class="bg-[#FCF9E7] rounded-xl p-6 shadow-inner">
+      <h2 class="text-[#422913] font-extrabold text-lg mb-3">Otávio</h2>
+      <p class="text-[#422913] font-semibold mb-1">Sabor: <span class="font-normal">Café com Licor de Amêndoas (sem álcool)</span></p>
+      <p class="text-[#422913] font-semibold mb-1">Leite: <span class="font-normal">Leite vegetal de caju</span></p>
+      <p class="text-[#422913] font-semibold mb-4">Complemento: <span class="font-normal">Canela em pó</span></p>
+      <button aria-label="Curtir Otávio" class="flex items-center gap-3 bg-[#422913] text-[#FAF5E6] rounded-md px-4 py-2 text-base font-normal hover:bg-[#3a230f] transition like-btn">
+        <i class="fas fa-thumbs-up"></i> <span class="like-count">135</span>
+      </button>
+    </section>
+  </div>
+
+  <button id="finalizarBtn" class="mt-8 bg-[#422913] text-[#FAF5E6] px-6 py-3 rounded-xl text-lg font-semibold hover:bg-[#3a230f] transition">
+  </p>
+  <a
+    href="final.html"
+    class="mt-4 bg-[#D9BFA6] text-[#422913] font-bold rounded-md px-6 py-2 text-lg hover:bg-[#c4ad8f] transition-colors text-center block"
+  > Finalizar
+  </button>
+
+  <script>
+    const buttons = document.querySelectorAll('.like-btn');
+    let currentLikedButton = null;
+
+    buttons.forEach(button => {
+      button.addEventListener('click', () => {
+        const countSpan = button.querySelector('.like-count');
+        let count = parseInt(countSpan.textContent, 10);
+
+        if (currentLikedButton === button) {
+          // If clicking the same button again, remove like
+          count--;
+          countSpan.textContent = count;
+          button.classList.remove('opacity-60', 'cursor-not-allowed');
+          button.disabled = false;
+          currentLikedButton = null;
+        } else {
+          // If another button was liked before, decrement its count and enable it
+          if (currentLikedButton) {
+            const prevCountSpan = currentLikedButton.querySelector('.like-count');
+            let prevCount = parseInt(prevCountSpan.textContent, 10);
+            prevCount--;
+            prevCountSpan.textContent = prevCount;
+            currentLikedButton.classList.remove('opacity-60', 'cursor-not-allowed');
+            currentLikedButton.disabled = false;
+          }
+          // Increment current button count and disable it
+          count++;
+          countSpan.textContent = count;
+          button.classList.add('opacity-60', 'cursor-not-allowed');
+          button.disabled = true;
+          currentLikedButton = button;
+        }
+      });
+    });
+
+    const finalizarBtn = document.getElementById('finalizarBtn');
+    finalizarBtn.addEventListener('click', () => {
+      if (currentLikedButton) {
+        alert(`Você finalizou sua votação na opção: ${currentLikedButton.closest('section').querySelector('h2').textContent}`);
+      } else {
+        alert('Por favor, selecione uma opção antes de finalizar.');
+      }
+    });
+  </script>
+</body>
+</html>
